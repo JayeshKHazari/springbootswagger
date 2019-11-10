@@ -23,6 +23,6 @@ jobs:
       uses: manusa/actions-publish-docker@master
       with:
         name: organization/image_name
-        username: ç
+        username: ${{ secrets.DOCKER_HUB_USER }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }} 
 
